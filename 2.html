@@ -1,25 +1,38 @@
 <!doctype html>
 <head><title>css</title>
 <meta charset="utf-8">
+<link rel="stylesheet" href="styles.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2MRJF0KWKS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2MRJF0KWKS');
+</script>
 </head>
 <body>
   <h1><a href="index.html">WEB공부</a></h1>
-컴퓨터의 글씨가 깨지지 않기 위해서 meta charset="utf-8"
-<h2><span style="color:red">title을 사용하면 페이지 이름이 바뀐다!</span></h2>
-<h3><span style="color:blue">색을 바꾸려면 span style="color:원하는색깔"</span></h3>
-<ol>
-  <li><a href="1.html">html</a></li>
-  <li><a href="2.html">css</a></li>
-  <li><a href="3.html">javascript</a></li>
-</ol>
-<h2>css</h2>
-CSS란 Cascading Style Sheets의 약자입니다.<br>
-CSS는 HTML 요소들이 각종 미디어에서 어떻게 보이는가를 정의하는 데 사용되는 스타일 시트 언어입니다.<br>
-HTML4 부터는 이러한 모든 서식 설정을 HTML 문서로부터 따로 분리하는 것이 가능해졌습니다.<br>
-오늘날 대부분의 웹 브라우저들은 모두 CSS를 지원하고 있습니다.
-</p>
+<div id="grid">
+    <ol>
+      <li><a href="1.html">html</a></li>
+      <li><a href="2.html"
+        style="color:gray;text-decoration:underline">css</a></li>
+      <li><a href="3.html" id="active">javascript</a></li>
+    </ol>
+  <div id="article">
+      <h2>css</h2>
+      <p>
+      CSS란 Cascading Style Sheets의 약자입니다.<br>
+      CSS는 HTML 요소들이 각종 미디어에서 어떻게 보이는가를 정의하는 데 사용되는 스타  일 시트 언어입니다.<br>
+      HTML4 부터는 이러한 모든 서식 설정을 HTML 문서로부터 따로 분리하는 것이 가능해졌습니다.<br>
+      오늘날 대부분의 웹 브라우저들은 모두 CSS를 지원하고 있습니다.</span>
+    </p>
+  </div>
+</div>
 <p><strong>
-  <a href="http://tcpschool.com/html/html_expand_css" target="_brank" title="css 추가정보">css 추가 정보</a>
+  <a href="http://tcpschool.com/html/html_expand_css" target="_brank" title="css 추가정보"; style="text-decoration:underline">css 추가 정보</a>
 </strong></p>
 </body>
 </html>

@@ -1,17 +1,69 @@
 <!doctype html>
 <head><title>민우의 html 공부방~!★</title>
 <meta charset="utf-8">
+<style>
+a:link {
+  color: red;
+}
+a:visited {
+  color: green;
+}
+a:hover {
+  color: hotpink;
+}
+a:active {
+  color: blue;
+}
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2MRJF0KWKS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2MRJF0KWKS');
+</script>
 </head>
 <body>
-  <h1><a href="index.html">WEB공부</a></h1>
+  <h1><a href="index.html" style="text-decoration: none">WEB공부</a></h1>
 컴퓨터의 글씨가 깨지지 않기 위해서 meta charset="utf-8"
+<ol>
+  <li><a href="box.html">box</a></li>
+  <li><a href="grid.html">grid</a></li>
+</ol>
 <h2><span style="color:red">title을 사용하면 페이지 이름이 바뀐다!</span></h2>
 <h3><span style="color:blue">색을 바꾸려면 span style="color:원하는색깔"</span></h3>
+a:link -방문하지 않은 정상적인 링크<br>
+a:visited -사용자가 방문한 링크<br>
+a:hover -사용자가 마우스를 올려 놓을 때의 링크<br>
+a:active -클릭하는 순간의 링크<br>
+<p>
+  전부 같은 형태의 선택자인 경우: 가장 마지막 선택자 승
+다른 형태 선택자인 경우: id > class > tag
+     - 왜? 태그 통해 포괄적 디자인 지정.
+              특별한(구체적인) 디자인은 id 통해 차별화.
+               class는 그 중간단계.
+             </p>
 <ol>
   <li><a href="1.html">html</a></li>
   <li><a href="2.html">css</a></li>
   <li><a href="3.html">javascript</a></li>
 </ol>
+<!--
+<ol>
+<h1><a href="index.html">WEB공부</a></h1>
+컴퓨터의 글씨가 깨지지 않기 위해서 meta charset="utf-8"
+<h2><span style="color:red">title을 사용하면 페이지 이름이 바뀐다!</span></h2>
+<h3><span style="color:blue">색을 바꾸려면 span style="color:원하는색깔"</span></h3>
+
+
+<li><a href="1.html"><font color="red">html</font></a></li>
+<li><a href="2.html"><font color="red">css</font></a></li>
+<li><a href="3.html"><font color="red">javascript</font></a></li>
+</ol>
+-->
+
+!--를 사용하면 원하지 않는 내용을 사용하지 않을 수 있음 끝에는 --> 으로 작성
 <h2>WEB공부</h2>
 <p style="margin-top:40px;">웹이란?</p>
 <p>
@@ -22,3 +74,11 @@
 인터넷과 같은 의미로 많이 사용되고 있지만, 정확히 말해 웹은 인터넷상의 인기 있는 하나의 서비스일 뿐입니다.<br>
 하지만 현재에는 인터넷과 웹이라는 단어가 서로 혼용되어 사용될 만큼 인터넷의 가장 큰 부분을 차지하고 있습니다.<br></p>
 <h2><strong><a href="http://tcpschool.com/webbasic/www"target="_blank"title="웹 추가설명">web추가설명</a></strong><h2>
+<p>
+</p>
+<p>
+  ▣ 수업 내용 정리</p><p>
+  ▶ 웹페이지에 CSS를 넣는 방법으로 <br>1) style태그를 사용하는 방법과 <br>2) style속성을
+  쓰는 방법이 있다.</p><p>
+  ▶ 선택자(Selector)와 효과(Declaration) 라는 것이 있다. 선택자는 CSS효과를 적용해 줄 대상을 가리켜 선택해주는 것이고, a { ~~ } 와 같은 모양새 이다.<br> 효과는 그에 적용되어 나타나게 될 CSS효과를 CSS문법을 통해 표현한 것으로, <br>color:black; <br>text-decoration:none; 등과 같이 생겼다.</p><p>
+  ▶ 효과(declaration)는 여러 개를 선언하고 지정해(넣어)줄 수 있다 <br>(선택자가 필요 있는 상황이든 필요 없는 상황이든). <br>그리고 여러 개의 효과를 써준 경우, 세미콜론( ; )으로 각효과를 구분해준다.</p>
