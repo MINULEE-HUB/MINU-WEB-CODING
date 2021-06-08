@@ -12,7 +12,8 @@
   gtag('config', 'G-2MRJF0KWKS');
 </script>
 <script>
-  function LinkssetColor(color){
+  var Links = { 
+    setColor:function (color){
     var alist = document.querySelectorAll('a');
       var i = 0; 
       while(i < alist.length){
@@ -20,22 +21,25 @@
       i = i + 1;
       }
   }
-  function BodysetColor(color){
-    document.querySelector('body').style.color = color;
-  }
-  function BodysetbackgroundColor(color){
-    document.querySelector('body').style.backgroundColor = color;
+}
+  var Body = {
+    setColor:function (color){
+      document.querySelector('body').style.color = color;
+    },
+    setBackgroundColor:function (color){
+      document.querySelector('body').style.backgroundColor = color;
+    }
   }
   function nightDayHandler(self){
     var target = document.querySelector('body');
     if(self.value === 'night'){
-      Body.setbackgroundColor('black');
+      Body.setBackgroundColor('black');
       Body.setColor('white');
       self.value = 'day';
        Links.setColor('powderblue');
     } 
     else {
-      Body.setbackgroundColor('white');
+      Body.setBackgroundColor('white');
       Body.setColor('black');
       self.value = 'night';
         Links.setColor('blue');
@@ -74,6 +78,8 @@
       <h2>function은 기능,작용,목적,구실,역할,함수,기능하다,작동하다,움직이다</h2>
   </div>
 </div>
+<p>js에서는, style tag  안에서 배경색을 주는 문법 자체가 style.backgroundColor 입니다.<br>무조건 대문자 C로 적어야 되는 걸로 '애초에' 정해져 있어요.</p>
+객체는 무조건 ,로 나눠줘야한다.
 <h2><strong><a href="https://www.w3.org/TR/html52/textlevel-semantics.html#the-a-element" target="_blank"title="자바스크립트에 추가설명">Javascript추가설명</a></strong><h2>  
 
   <input type="button" style="width:100px; height:50px; font-size:30px;" value="night" onclick="
